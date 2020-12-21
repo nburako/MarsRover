@@ -8,9 +8,9 @@ namespace MarsRoverApp.RoverSpace
     {
         public Coordinate Coordinate { get; set; }
         public Directions Direction { get; set; }
-        public IPlateau Plateau { get; set; }
+        public Plateau Plateau { get; set; }
 
-        public Rover(Coordinate coordinate, Directions direction, IPlateau plateau)
+        public Rover(Coordinate coordinate, Directions direction, Plateau plateau)
         {
             Coordinate = coordinate;
             Direction = direction;

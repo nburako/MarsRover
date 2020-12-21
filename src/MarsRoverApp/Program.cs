@@ -35,8 +35,8 @@ namespace MarsRoverApp
                             rovers.Add(rover);
                             break;
                         case CommanTypes.RoverMovementCommand:
-                            var movement = new RoverMovementCommand();
-                            movement.RunCommand(command, rovers[rovers.Count - 1]);
+                            var roverMovementCommand = new RoverMovementCommand();
+                            roverMovementCommand.RunCommand(command, rovers[rovers.Count - 1]);
                             break;
                     }
                 }
